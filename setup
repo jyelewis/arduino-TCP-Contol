@@ -1,0 +1,4 @@
+cd "$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+npm install express
+npm install socket.io

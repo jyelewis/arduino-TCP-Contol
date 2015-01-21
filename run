@@ -1,0 +1,2 @@
+cd "$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+node app.js $1

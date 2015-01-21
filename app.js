@@ -9,11 +9,12 @@ if (process.argv[2]){
 	port = process.argv[2];
 }
 server.listen(port);
+console.log("Web server listning on port " + port);
+app.use("/", express.static(__dirname + '/resources'));
 
-app.get('/', function (req, res) {
+app.get('*', function (req, res) {
   res.sendfile(__dirname + '/index.html');
 });
-app.use("/", express.static(__dirname + '/resources'));
 
 
 
